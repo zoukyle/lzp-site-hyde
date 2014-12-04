@@ -1,0 +1,32 @@
+{% macro render_sidebar() -%}
+<ul class="nav nav-list">
+    <li class="nav-header">Sidebar</li>
+{% for sidebar_item in sidebar -%}
+  <li{% if sidebar_item.url == resource.url or sidebar_item.active %} class="active"{% endif %}>
+  <a href="{{ sidebar_item.url }}">{{ sidebar_item.title }}</a></li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro render_sub_indexpage(title, url, image, width, height) -%}
+  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+    <a href="{{ url }}">
+      <img border="0" alt="{{ title }}" src="{{ google_drive_dir }}/{{image}}"
+      {% if width != 0 %}width="{{ width }}"{% endif %}
+      {% if height != 0 %}height="{{ height }}"{% endif %}
+      />
+    </a>
+  </div>
+  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+  <a href="{{ url }}">{{ title }}</a></div>
+  <br />
+{%- endmacro %}
+
+{% macro render_image_with_title(title, image) -%}
+  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+    <img border="0" alt="{{ title }}" src="{{ google_drive_dir }}/{{image}}" />
+  </div>
+  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+  {{ title }}</div>
+  <br />
+{%- endmacro %}

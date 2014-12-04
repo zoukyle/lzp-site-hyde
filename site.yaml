@@ -1,0 +1,78 @@
+# Use "hyde publish -c prod.yaml to have this automatically switch to production
+mode: development
+# Relative path from content folder.
+media_root: media
+media_url: /media # URL where the media files are served from.
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.textlinks.TextlinksPlugin
+context:
+    data:
+        site_title: Liang Zou Photography
+        author:
+            name: Liang Zou
+            url: "http://liangzouphotography.com"
+        google_analytics_id: UA-XXXXX-YY
+        home_url: /index.html
+        google_drive_dir: "https://googledrive.com/host/0B-yP6qGwTd2iRkRXN24zNmlHOXM"
+        menu:
+            - title: Home
+              url: /index.html
+            - title: Google Business View
+              url: /google-business-view.html
+            - title: Weddings
+              url: /weddings\index.html
+              submenu:
+                - title: Frank & Tina
+                  url: /weddings/frank-tina.html
+            - title: Portrait
+              url: /portrait\index.html
+              submenu:
+                - title: Portrait 1
+                  url: /portrait/portrait-1.html
+                - title: Portrait 2
+                  url: /portrait/portrait-2.html
+                - title: Portrait 3
+                  url: /portrait/portrait-3.html
+                - title: Portrait 4
+                  url: /portrait/portrait-4.html
+                - title: Portrait 5
+                  url: /portrait/portrait-5.html
+                - title: Portrait 6
+                  url: /portrait/portrait-6.html
+            - title: Maternity
+              url: /maternity\index.html
+              submenu:
+                - title: Vivien R
+                  url: /maternity/vivien.html
+                - title: Belly Painting
+                  url: /maternity/belly-painting.html
+                - title: Mama Group
+                  url: /maternity/mama-group.html
+            - title: Newborn
+              url: /newborn\index.html
+              submenu:
+                - title: Fiona Z
+                  url: /newborn/fiona.html
+                - title: Rella W
+                  url: /newborn/rella.html
+            - title: Events
+              url: /events\index.html
+            - title: Architecture
+              url: /architecture.html
+            - title: Pricing
+              url: /pricing.html
+            - title: Booking
+              url: /booking.html
+            - title: Contact Us
+              url: /contact-us.html
+
+deploy_root: ../zoukyle.github.io/
+
+publisher:
+    github:
+        type: hyde.ext.publishers.dvcs.Git
+        path: ../zoukyle.github.io/
+        url: git@github.com:zoukyle/zoukyle.github.com.git

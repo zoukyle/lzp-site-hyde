@@ -1,0 +1,19 @@
+---
+title: Maternity
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Maternity
+
+{% from "macros.j2" import render_sub_indexpage with context %}
+{% for title, url, image_name in [
+  ('Vivien R', '/maternity/vivien.html', '641B2017.JPG'),
+  ('Belly Painting', '/maternity/belly-painting.html', '641B2212.JPG'),
+  ('Mama Group', '/maternity/mama-group.html', '641B3268.JPG')] %}
+  {{ render_sub_indexpage(title, url, image_name) }}
+{% endfor %}
+{% endblock main %}

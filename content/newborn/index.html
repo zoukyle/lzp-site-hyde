@@ -1,0 +1,18 @@
+---
+title: Newborn
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Newborn
+
+{% from "macros.j2" import render_sub_indexpage with context %}
+{% for title, url, image_name in [
+  ('Fiona Z', '/newborn/fiona.html', '641B5190.JPG'),
+  ('Rella W', '/newborn/rella.html', 'newborn_01.jpg')] %}
+  {{ render_sub_indexpage(title, url, image_name, 400, 266) }}
+{% endfor %}
+{% endblock main %}

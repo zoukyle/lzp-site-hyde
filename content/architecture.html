@@ -1,0 +1,26 @@
+---
+title: Architecture
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Architecture
+{% from "macros.j2" import render_image_with_title with context %}
+{% for title, image_name in [
+  ('Hollywood - Los Angeles CA', '641B3624.JPG'),
+  ('Golden Gate Bridge - San Francisco CA', '641B3225.JPG'),
+  ('Reno NV', '641A5941.JPG'),
+  ('City Hall - San Francisco CA', '641B1154.jpg'),
+  
+  ('California Capital - Sacramento CA', '641A5734.JPG'),
+  ('California Capital - Sacramento CA', '641A5756.JPG'),
+  ('Rivergate Tower - Tampa FL', '641A8434.JPG'),
+  ('Embassy Suits - Tampa FL', '641A8468.JPG'),
+   ] %}
+  {{ render_image_with_title(title, image_name) }}
+{% endfor %}
+
+{% endblock main %}

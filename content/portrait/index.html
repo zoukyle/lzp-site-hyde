@@ -1,0 +1,16 @@
+---
+title: Portrait
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Portrait
+
+{% for num in range(1, 7) -%}
+<a href="/portrait/portrait-{{ num }}.html">
+<img border="1" src='{{ google_drive_dir }}/portraits_{{ "%02d"|format(num) }}.jpg' /></a>
+{%- endfor %}
+{% endblock main %}
