@@ -69,10 +69,10 @@ context:
             - title: Contact Us
               url: /contact-us.html
 
-deploy_root: ../zoukyle.github.io/
+deploy_root: ../zoukyle.github.io
 
 publisher:
     github:
         type: hyde.ext.publishers.dvcs.Git
-        path: ../zoukyle.github.io/
+        path: ../zoukyle.github.io
         url: git@github.com:zoukyle/zoukyle.github.com.git
