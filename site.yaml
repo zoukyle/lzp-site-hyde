@@ -1,5 +1,6 @@
-# Use "hyde publish -c prod.yaml to have this automatically switch to production
-mode: development
+# change to mode: prod before generating for production files
+# change to mode: dev before generating for development files
+mode: dev
 # Relative path from content folder.
 media_root: media
 media_url: /media # URL where the media files are served from.
@@ -10,11 +11,10 @@ plugins:
     - hyde.ext.plugins.textlinks.TextlinksPlugin
 context:
     data:
-        site_title: Liang Zou Photography
+        site_title: Liang Zou Photography, LiangZou Photography
         author:
             name: Liang Zou
             url: "http://liangzouphotography.com"
-        google_analytics_id: UA-XXXXX-YY
         home_url: /index.html
         google_drive_dir: "https://googledrive.com/host/0B-yP6qGwTd2iRkRXN24zNmlHOXM"
         menu:
@@ -70,9 +70,3 @@ context:
               url: /contact-us.html
 
 deploy_root: ../zoukyle.github.io
-
-publisher:
-    github:
-        type: hyde.ext.publishers.dvcs.Git
-        path: ../zoukyle.github.io
-        url: git@github.com:zoukyle/zoukyle.github.com.git
