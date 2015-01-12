@@ -60,6 +60,8 @@ context:
                   url: /newborn/rella.html
             - title: Events
               url: /events\index.html
+            - title: Real Estate
+              url: /real-estate\index.html
             - title: Architecture
               url: /architecture.html
             - title: Pricing
