@@ -1,0 +1,18 @@
+---
+title: Family
+description: Family Portraits
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Family Portraits
+
+{% from "macros.j2" import render_sub_indexpage with context %}
+{% for title, url, image_name in [
+  ('Family 1', '/family/family-1.html', '641B5998.JPG'),
+  ('Family 2', '/family/family-2.html', '641C0105-Edit.JPG')] %}
+  {{ render_sub_indexpage(title, url, image_name, 400, 266) }}
+{% endfor %}
+{% endblock main %}

@@ -27,6 +27,13 @@ context:
               submenu:
                 - title: Frank & Tina
                   url: /weddings/frank-tina.html
+            - title: Family
+              url: /family\index.html
+              submenu:
+                - title: Family 1
+                  url: /family/family-1.html
+                - title: Family 2
+                  url: /family/family-2.html
             - title: Portrait
               url: /portrait\index.html
               submenu:
