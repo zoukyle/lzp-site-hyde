@@ -8,25 +8,31 @@
 </ul>
 {%- endmacro %}
 
-{% macro render_sub_indexpage(title, url, image, width, height) -%}
-  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+{% macro render_sub_indexpage(title, url, image) -%}
+  <div class="img-div">
     <a href="{{ url }}">
       <img border="0" alt="{{ title }}" src="{{ google_drive_dir }}/{{image}}"
-      {% if width != 0 %}width="{{ width }}"{% endif %}
-      {% if height != 0 %}height="{{ height }}"{% endif %}
-      />
+       class="auto-scale" />
     </a>
   </div>
-  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
+  <div class="img-div">
   <a href="{{ url }}">{{ title }}</a></div>
   <br />
 {%- endmacro %}
 
 {% macro render_image_with_title(title, image) -%}
-  <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
-    <img border="0" alt="{{ title }}" src="{{ google_drive_dir }}/{{image}}" />
+  <div class="img-div">
+    <img class="auto-scale" border="0" alt="{{ title }}"
+     src="{{ google_drive_dir }}/{{image}}" />
   </div>
   <div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
   {{ title }}</div>
+  <br />
+{%- endmacro %}
+
+{% macro render_image(image) -%}
+  <div class="img-div">
+    <img class="auto-scale" border="0" src="{{ google_drive_dir }}/{{image}}" />
+  </div>
   <br />
 {%- endmacro %}

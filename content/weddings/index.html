@@ -11,7 +11,7 @@ description: RT
 
 {% from "macros.j2" import render_sub_indexpage with context %}
 {% for title, url, image_name in [
-  ('Frank &amp; Tina', '/weddings/frank-tina.html', '641B1083.JPG')] %}
-  {{ render_sub_indexpage(title, url, image_name, 400, 266) }}
+  ('Frank &amp; Tina', '/weddings/frank-tina.html', '641B1083_s.JPG')] %}
+  {{ render_sub_indexpage(title, url, image_name) }}
 {% endfor %}
 {% endblock main %}

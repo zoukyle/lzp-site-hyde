@@ -8,16 +8,10 @@ description: RT
 
 {% block main %}
 ### Portrait 3
-
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7325.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7352.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7392.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7439.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7445.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A7447.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
+{% from "macros.j2" import render_image with context %}
+{% for image in
+    ['641A7325.JPG', '641A7352.JPG', '641A7392.JPG', '641A7439.JPG', '641A7445.JPG',
+     '641A7447.JPG'] %}
+  {{ render_image(image) }}
+{% endfor %}
 {% endblock main %}

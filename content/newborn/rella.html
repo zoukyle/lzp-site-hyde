@@ -8,33 +8,11 @@ description: RT
 
 {% block main %}
 ### Rella W
-<div style="display: block; text-align: center; margin-right: auto; margin-left: auto;"><img border="0" src="{{ google_drive_dir }}/641B5343.JPG" style="display: block; margin-right: auto; margin-left: auto; text-align: center;"></div>
-<br />
-<div style="display: block; text-align: center; margin-right: auto; margin-left: auto;"><img border="0" src="{{ google_drive_dir }}/641B5342.JPG" style="display: block; margin-right: auto; margin-left: auto; text-align: center;"></div>
-<br />
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A9931.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A9957.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A9959.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A9961.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A9965.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0015.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0017.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0049.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0060.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0080.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0091.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0097.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-
+{% from "macros.j2" import render_image with context %}
+{% for image in ['641B5343.JPG', '641B5342.JPG', '641A9931.JPG', '641A9957.JPG',
+'641A9959.JPG', '641A9961.JPG', '641A9965.JPG', '641A0015.JPG',
+'641A0017.JPG', '641A0049.JPG', '641A0060.JPG', '641A0080.JPG',
+'641A0091.JPG', '641A0097.JPG', ] %}
+  {{ render_image(image) }}
+{% endfor %}
 {% endblock main %}

@@ -8,35 +8,11 @@ description: RT
 
 {% block main %}
 ### Portrait 2
-
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8008.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8029.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8048.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8050.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8056.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8060.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8087.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8101.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8108.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8121.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8136.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8140.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8151.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8176.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A8186.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-
+{% from "macros.j2" import render_image with context %}
+{% for image in
+    ['641A8008.JPG', '641A8029.JPG', '641A8048.JPG', '641A8050.JPG', '641A8056.JPG',
+     '641A8060.JPG', '641A8087.JPG', '641A8101.JPG', '641A8108.JPG', '641A8121.JPG',
+     '641A8136.JPG', '641A8140.JPG', '641A8151.JPG', '641A8176.JPG', '641A8186.JPG'] %}
+  {{ render_image(image) }}
+{% endfor %}
 {% endblock main %}

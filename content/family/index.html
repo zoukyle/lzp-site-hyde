@@ -11,8 +11,8 @@ description: Family Portraits
 
 {% from "macros.j2" import render_sub_indexpage with context %}
 {% for title, url, image_name in [
-  ('Family 1', '/family/family-1.html', '641B5998.JPG'),
-  ('Family 2', '/family/family-2.html', '641C0105-Edit.JPG')] %}
-  {{ render_sub_indexpage(title, url, image_name, 400, 266) }}
+  ('Family 1', '/family/family-1.html', '641B5998_s.JPG'),
+  ('Family 2', '/family/family-2.html', '641C0105_s.JPG')] %}
+  {{ render_sub_indexpage(title, url, image_name) }}
 {% endfor %}
 {% endblock main %}

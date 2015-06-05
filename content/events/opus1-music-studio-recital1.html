@@ -8,33 +8,11 @@ description: RT
 
 {% block main %}
 ### Opus1 Music Studio Recital - Sunnyvale 2014
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0188.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0110.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0121.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0126.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0140.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0154.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0202.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0219.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0224.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0289.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0298.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0307.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0326.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><img border="0" src="{{ google_drive_dir }}/641A0372.JPG" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-<br>
-
+{% from "macros.j2" import render_image with context %}
+{% for image in ['641A0188.JPG', '641A0110.JPG', '641A0121.JPG', '641A0126.JPG',
+'641A0140.JPG', '641A0154.JPG', '641A0202.JPG', '641A0219.JPG',
+'641A0224.JPG', '641A0289.JPG', '641A0298.JPG', '641A0307.JPG',
+'641A0326.JPG', '641A0372.JPG', ] %}
+  {{ render_image(image) }}
+{% endfor %}
 {% endblock main %}
