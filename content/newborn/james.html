@@ -1,0 +1,21 @@
+---
+title: James
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### James
+{% from "macros.j2" import render_image with context %}
+{% for image in ['641C1759.JPG', '641C1765.JPG', '641C1777.JPG', '641C1782.JPG',
+'641C1788.JPG', '641C1789.JPG', '641C1793.JPG', '641C1795.JPG',
+'641C1805.JPG', '641C1812.JPG', '641C1817.JPG', '641C1818.JPG',
+'641C1825.JPG', '641C1833.JPG', '641C1857.JPG', '641C1876.JPG',
+'641C1877.JPG', '641C1884.JPG', '641C1900.JPG', '641C1921.JPG',
+'641C1928.JPG', '641C1932.JPG', '641C1936.JPG', '641C1955.JPG',
+'641C1972.JPG'] %}
+  {{ render_image(image) }}
+{% endfor %}
+{% endblock main %}

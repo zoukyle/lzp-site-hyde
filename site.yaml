@@ -20,8 +20,8 @@ context:
         menu:
             - title: Home
               url: /index.html
-            - title: Google Business View
-              url: /google-business-view.html
+            - title: Pricing
+              url: /pricing.html
             - title: Weddings
               url: /weddings\index.html
               submenu:
@@ -65,14 +65,18 @@ context:
                   url: /newborn/fiona.html
                 - title: Rella W
                   url: /newborn/rella.html
+                - title: James
+                  url: /newborn/james.html
+                - title: Brian
+                  url: /newborn/brian.html
             - title: Events
               url: /events\index.html
             - title: Real Estate
               url: /real-estate\index.html
             - title: Architecture
               url: /architecture.html
-            - title: Pricing
-              url: /pricing.html
+            - title: Google Business View
+              url: /google-business-view.html
             - title: Booking
               url: /booking.html
             - title: Contact Us

@@ -53,21 +53,17 @@ body {
 
 {% block main %}
 <p>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5635.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5635.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5643.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5643.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5662.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5662.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5665.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5665.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641A8176.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641A8176.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641A8196.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641A8196.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641A8273.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641A8273.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641A9961.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641A9961.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B1342.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B1342.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B1369.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B1369.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B1895.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B1895.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B2017.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B2017.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B2155.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B2155.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B2197.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B2197.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5055.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5055.jpg" alt="" /></a>
-<a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/641B5075.JPG" rel="fancybox-thumb" title=""><img src="{{ google_drive_dir }}/iframes/imgs_s/641B5075.jpg" alt="" /></a>
+{% for image in ['641C2689', '641C2296', '641C2221', '641B3099',
+'641B0804', '641A8970', '641A9753', '641B3704',
+'641C0138', '641C1972', '641C1777', '641C1581', '641C1101',
+'641C0461', '641C0455', '641C0347', '641B6000',
+'641C0129', '641B5635', '641B5643', '641B5662',
+'641B5665', '641A8176', '641A8196', '641A8273',
+'641A9961', '641B1342', '641B1369', '641B1895',
+'641B2017', '641B2155', '641B2197', '641B5055'] %}
+  <a class="fancybox-thumb" href="{{ google_drive_dir }}/iframes/imgs_b/{{image}}.JPG" rel="fancybox-thumb" title="">
+    <img src="{{ google_drive_dir }}/iframes/imgs_s/{{image}}.jpg" alt="" />
+  </a>
+{% endfor %}
 </p>
 {% endblock main %}

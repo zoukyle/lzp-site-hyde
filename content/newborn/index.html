@@ -12,7 +12,9 @@ description: RT
 {% from "macros.j2" import render_sub_indexpage with context %}
 {% for title, url, image_name in [
   ('Fiona Z', '/newborn/fiona.html', '641B5190_s.JPG'),
-  ('Rella W', '/newborn/rella.html', 'newborn_01.jpg')] %}
+  ('Rella W', '/newborn/rella.html', 'newborn_01.jpg'),
+  ('James', '/newborn/james.html', '641C1765_s.JPG'),
+  ('Brian', '/newborn/brian.html', '641C2461_s.JPG'), ] %}
   {{ render_sub_indexpage(title, url, image_name) }}
 {% endfor %}
 {% endblock main %}
