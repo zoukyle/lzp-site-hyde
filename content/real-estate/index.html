@@ -7,6 +7,12 @@ description: RT
 
 
 {% block main %}
+
+{% from "macros.j2" import render_image with context %}
+{% for num in range(1, 40) %}
+  {{ render_image('3090-springs-rd-%s.JPG' % num) }}
+{% endfor %}
+
 ### Real Estate Virtual Tours
 <div class="iframe-container no-overflow">
 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?layer=c&amp;panoid=5weuA6eA3vUAAAQZL1fgnA&amp;ie=UTF8&amp;source=embed&amp;output=svembed&amp;cbp=13%2C26.262%2C%2C0%2C0"></iframe><div><small>Master Bedroom</small></div>
