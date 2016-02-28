@@ -1,0 +1,17 @@
+---
+title: Family 3
+description: The family portraits
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Family 3
+{% from "macros.j2" import render_image with context %}
+{% for image in ['641C4613.JPG', '641C4617.JPG', '641C4625.JPG', '641C4656.JPG',
+'641C4660.JPG', '641C4730.JPG', '641C4790.JPG', '641C4804.JPG',
+'641C4854.JPG', '641C4855.JPG', '641C4877.JPG', ] %}
+  {{ render_image(image) }}
+{% endfor %}
+{% endblock main %}

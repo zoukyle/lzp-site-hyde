@@ -1,9 +1,9 @@
 zoukyle.github.io
 =================
-0. windows key + R, then powershell
+0. windows key + R, then cmd
 1. cd C:\Python27\Scripts
-2.  .\hyde.exe -s 'C:\Users\liangzou\Documents\photography_site\lzp-site-hyde' gen
-3.  .\hyde.exe -s 'C:\Users\liangzou\Documents\photography_site\lzp-site-hyde' serve
+2.  .\hyde.exe -s C:\Users\liangzou\Documents\photography_site\lzp-site-hyde gen
+3.  .\hyde.exe -s C:\Users\liangzou\Documents\photography_site\lzp-site-hyde serve
 
 Make sure all the changes are good.
 

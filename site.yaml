@@ -34,6 +34,12 @@ context:
                   url: /family/family-1.html
                 - title: Family 2
                   url: /family/family-2.html
+                - title: Family 3
+                  url: /family/family-3.html
+                - title: Family 4
+                  url: /family/family-4.html
+                - title: Family 5
+                  url: /family/family-5.html
             - title: Portrait
               url: /portrait\index.html
               submenu:
@@ -61,6 +67,8 @@ context:
             - title: Newborn
               url: /newborn\index.html
               submenu:
+                - title: Kyle L
+                  url: /newborn/kyle.html
                 - title: Fiona Z
                   url: /newborn/fiona.html
                 - title: Rella W

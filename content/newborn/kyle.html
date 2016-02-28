@@ -1,0 +1,18 @@
+---
+title: Kyle Li
+description: RT
+---
+
+{% extends "columns.j2" %}
+
+
+{% block main %}
+### Kyle Li
+{% from "macros.j2" import render_image with context %}
+{% for image in ['641C4936.JPG', '641C4943.JPG', '641C4947.JPG', '641C4955.JPG',
+'641C4979.JPG', '641C4988.JPG', '641C5007.JPG', '641C5040.JPG',
+'641C5051.JPG', '641C5055.JPG', '641C5059.JPG', '641C5061.JPG',
+'641C5069.JPG', '641C5075.JPG', '641C5084.JPG', '641C5087.JPG', ] %}
+  {{ render_image(image) }}
+{% endfor %}
+{% endblock main %}
