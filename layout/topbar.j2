@@ -28,7 +28,7 @@
           <ul class="dropdown-menu" role="menu">
           {% for submenu_item in menu_item.submenu %}
               <li><a href="{{ submenu_item.url }}">{{ submenu_item.title }}</a></li>
-          {%- endfor %}
+          {% endfor -%}
           </ul>
           </li>
         {% else %}
