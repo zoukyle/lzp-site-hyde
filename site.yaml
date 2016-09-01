@@ -2,6 +2,7 @@
 # change to mode: dev before generating for development files
 mode: dev
 # Relative path from content folder.
+# old google_drive_dir: "https://googledrive.com/host/0B-yP6qGwTd2iRkRXN24zNmlHOXM"
 media_root: media
 media_url: /media # URL where the media files are served from.
 plugins:
@@ -16,7 +17,7 @@ context:
             name: Liang Zou
             url: "http://liangzouphotography.com"
         home_url: /index.html
-        google_drive_dir: "https://googledrive.com/host/0B-yP6qGwTd2iRkRXN24zNmlHOXM"
+        google_drive_dir: "https://dl.dropboxusercontent.com/u/36806515"
         menu:
             - title: Home
               url: /index.html

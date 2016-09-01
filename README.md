@@ -8,7 +8,7 @@ zoukyle.github.io
 Make sure all the changes are good.
 
 4. Change mode: prod in site.yaml
-5. .\hyde.exe -s 'C:\Users\liangzou\Documents\photography_site\lzp-site-hyde' gen
+5. .\hyde.exe -s C:\Users\liangzou\Documents\photography_site\lzp-site-hyde gen
 6. Change mode: dev in site.yaml
 
 7. Start the *github* application
