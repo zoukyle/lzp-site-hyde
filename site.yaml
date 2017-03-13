@@ -17,7 +17,7 @@ context:
             name: Liang Zou
             url: "http://liangzouphotography.com"
         home_url: /index.html
-        google_drive_dir: "https://dl.dropboxusercontent.com/u/36806515"
+        google_drive_dir: "http://bookmarkmgr.appspot.com/static/images/lzp"
         menu:
             - title: Home
               url: /index.html
