@@ -2,7 +2,6 @@
 # change to mode: dev before generating for development files
 mode: dev
 # Relative path from content folder.
-# old google_drive_dir: "https://googledrive.com/host/0B-yP6qGwTd2iRkRXN24zNmlHOXM"
 media_root: media
 media_url: /media # URL where the media files are served from.
 plugins:
@@ -21,8 +20,6 @@ context:
         menu:
             - title: Home
               url: /index.html
-            - title: Pricing
-              url: /pricing.html
             - title: Weddings
               url: /weddings\index.html
               submenu:
@@ -84,11 +81,5 @@ context:
               url: /real-estate\index.html
             - title: Architecture
               url: /architecture.html
-            - title: Google Business View
-              url: /google-business-view.html
-            - title: Booking
-              url: /booking.html
-            - title: Contact Us
-              url: /contact-us.html
 
 deploy_root: ../zoukyle.github.io
